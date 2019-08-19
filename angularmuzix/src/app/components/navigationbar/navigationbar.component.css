@@ -1,0 +1,41 @@
+.mat-toolbar {
+  background-color:seagreen;
+  position: fixed;
+  overflow: hidden;
+  z-index: 200;
+}
+.companyName {
+  font-size: 110%;
+  padding-left: 40px;
+  padding-top: 3px;
+}
+div {
+  overflow: inherit;
+}
+a {
+  text-decoration: none;
+  font-size: 100%;
+  white-space: normal;
+  padding-top: 22px;
+}
+button {
+  font-size: 100%;
+  min-width: min-content;
+}
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-sidenav-content {
+  font-size: 200%;
+  text-align: center;
+}
+.mat-card-image {
+  height: 40px;
+  width: 80px;
+  padding-left: 10px;
+  padding-top: 10px;
+ } 

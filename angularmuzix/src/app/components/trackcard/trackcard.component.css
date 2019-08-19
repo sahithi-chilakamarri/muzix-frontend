@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-around;
+  /* overflow: auto; */
+}
+/* Column Gap */
+.card > * {
+  box-sizing: border-box;
+}
+.card > *:not(:last-child) {
+  margin-right: 10px;
+}
+/* Item sizing */
+.example-card {
+  height: 500px;
+  width: 464px;
+  align-content: space-around;
+  margin-bottom:3%;
+  
+  /* overflow: auto; */
+}
+.example-header-image {
+  background-image: url("/assets/song.png");
+  background-size: cover;
+}
+mat-card-title {
+  font-size: 100px;
+}
+.mat-button
+{
+  background-color:crimson;
+}

@@ -1,0 +1,17 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:grey;
+    color: white;
+    text-align: center;
+  }
+  img
+  {
+      height:30px;
+      width:30px;
+     float:right;
+     padding-left: 5px;
+     padding-right: 5px;
+  }

@@ -1,0 +1,18 @@
+<div style="height: 10vh;" class="responsive">
+  <mat-toolbar>
+    <img mat-card-image src="/assets/logo2.jpg" />
+    <a mat-button class="companyName" routerLink="/">
+      <span> Muzix</span>
+    </a>
+    <!-- <span class="example-spacer"></span> -->
+    <span style="flex:1 1 auto;"></span>
+    <div fxShow="true" fxHide.lt-md="true" class="responsive">
+      <app-search></app-search>
+      <app-playist></app-playist>
+      <a mat-button>
+        User
+        <mat-icon>account_circle</mat-icon>
+      </a>
+    </div>
+  </mat-toolbar>
+</div>

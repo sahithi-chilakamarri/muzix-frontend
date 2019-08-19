@@ -1,0 +1,23 @@
+
+<div class="card">
+  <div *ngFor="let result of tracks">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ result.name }}</mat-card-title>
+        <mat-card-subtitle>{{ result.artist }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="/assets/image.jpg" />
+      <mat-card-content> 
+        <p>No of listeners: {{result.listeners}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button (click)="saveTrack(result)">
+          Add to WishList
+          <mat-icon>playlist_add</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+

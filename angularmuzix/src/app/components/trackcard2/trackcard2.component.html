@@ -1,0 +1,27 @@
+
+<div class="card">
+  <div *ngFor="let result of tracks">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ result.name }}</mat-card-title>
+        <mat-card-subtitle>{{ result.artist }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="/assets/image.jpg" />
+      <mat-card-content> 
+        <p>Song:{{result.name}}</p>
+        <p>No of listeners: {{result.listeners}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button (click)="openDialog(result)">
+          Edit
+          <mat-icon>create</mat-icon>
+        </button>
+        <button mat-button (click)="removeTrack(result)">
+          Delete from PlayList
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
